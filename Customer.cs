@@ -11,20 +11,22 @@ namespace Customer
         private string code;
         private string name;
         private string address;
+        private BusinessType businessType;
         
-        public Customer (string code, string name, string address)
+        public Customer (string code, string name, string address, BusinessType businessType)
         {
             this.code = code;
             this.name = name;
             this.address = address;
+            this.businessType = businessType;
         }
 
         public string DisplayCustomer (Customer customer)
         {
             return customer.code + ", "
                 + customer.name +", "
-                + customer.address;
-          
+                + customer.address +" ,"
+                + customer.businessType;
         }
 
     }

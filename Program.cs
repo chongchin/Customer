@@ -17,7 +17,7 @@ namespace Customer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Application.Run(new Form1());
-            Customer customer = new Customer("C01", "Customer1", "1 Tannery Road");
+            Customer customer = new Customer("C01", "Customer1", "1 Tannery Road",BusinessType.Manufacturing);
             MessageBox.Show(customer.DisplayCustomer(customer));
         }
     }
